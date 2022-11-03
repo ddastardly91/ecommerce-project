@@ -1,13 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap");
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+   margin: 0 auto;
+
+   font-family: "Poppins", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.card {
+   position: relative;
+   width: 325px;
+   border-radius: 8px;
+   box-shadow: 0 5px 20px 5px rgba(0, 0, 0, 0.15);
+
+   margin: 25px;
+   overflow: hidden;
+}
+
+.card-content {
+   margin: 15px;
+}
+
+.card-title {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-bottom: 10px;
+   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.card-name {
+   display: flex;
+   align-items: center;
+}
+
+.card-gender {
+   margin-left: 10px;
+   font-size: 20px;
+}
+
+.card-title h3 {
+   margin: 0;
+   font-size: 22px;
+}
+
+.card-title span {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   background-color: #e2a0ff;
+   padding: 2px 20px;
+   border-radius: 25px;
+   max-width: 100px;
+   max-height: 30px;
+   font-size: 10px;
+   overflow: hidden;
+}
+
+.card img {
+   width: 100%;
+   height: 225px;
+   object-fit: cover;
+}
+
+.container {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   margin: 0 auto;
+
+   max-width: 1900px;
+}
+
+.btn-container {
+   display: flex;
+   align-items: center;
+   justify-content: right;
+   padding: 10px;
+   box-sizing: border-box;
+}
+
+.btn-container button {
+   border: 0;
+   border-radius: 5px;
+   padding: 8px 25px;
+
+   background-color: #61f2c2;
+   color: #fff;
+   font-weight: bold;
+   font-family: "Poppins", sans-serif;
+   transition: 300ms ease-in;
+}
+
+.btn-container button:hover {
+   background-color: #b5ffe6;
+}
+
+.price {
+   position: absolute;
+   top: 0;
+   right: 0;
+   background: white;
+   padding: 5px;
+   border-bottom-left-radius: 10px;
+   font-size: 25px;
+   font-weight: bold;
+   margin-left: 20px;
 }
