@@ -1,6 +1,6 @@
 import Navbar from "./components/navbar/Navbar";
-import DogCards from "./components/DogCards";
-import Basket from "./components/Basket";
+import DogCards from "./components/dog-cards/DogCards";
+import Basket from "./components/basket/Basket";
 import { useContext } from "react";
 import { MyContext } from "./context";
 

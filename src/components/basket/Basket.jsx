@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import "./Basket.css";
 import { XCircleFill } from "react-bootstrap-icons";
-import { MyContext } from "../context";
+import { MyContext } from "../../context";
 
 const Basket = () => {
    const context = useContext(MyContext);
