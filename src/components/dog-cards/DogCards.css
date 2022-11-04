@@ -1,0 +1,92 @@
+.card-content {
+   margin: 15px;
+}
+
+.card-title {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-bottom: 10px;
+   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.card-name {
+   display: flex;
+   align-items: center;
+}
+
+.card-gender {
+   margin-left: 10px;
+   font-size: 20px;
+}
+
+.card-title h3 {
+   margin: 0;
+   font-size: 22px;
+}
+
+.card-title span {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   background-color: #e2a0ff;
+   padding: 2px 20px;
+   border-radius: 25px;
+   max-width: 100px;
+   max-height: 30px;
+   font-size: 10px;
+   overflow: hidden;
+}
+
+.card img {
+   width: 100%;
+   height: 225px;
+   object-fit: cover;
+}
+
+.container {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   margin: 0 auto;
+
+   max-width: 1900px;
+}
+
+.btn-container {
+   display: flex;
+   align-items: center;
+   justify-content: right;
+   padding: 10px;
+   box-sizing: border-box;
+}
+
+.btn-container button {
+   border: 0;
+   border-radius: 5px;
+   padding: 8px 25px;
+
+   cursor: pointer;
+   background-color: #61f2c2;
+   color: #fff;
+   font-weight: bold;
+   font-family: "Poppins", sans-serif;
+   transition: 300ms ease-in;
+}
+
+.btn-container button:hover {
+   background-color: #22be8a;
+}
+
+.price {
+   position: absolute;
+   top: 0;
+   right: 0;
+   background: white;
+   padding: 5px;
+   border-bottom-left-radius: 10px;
+   font-size: 25px;
+   font-weight: bold;
+   margin-left: 20px;
+}

@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import Card from "../ui/Card";
 import { GenderMale, GenderFemale } from "react-bootstrap-icons";
 import { MyContext } from "../../context";
+import "./DogCards.css";
 
 const DogCards = ({ handleAddBasket }) => {
    const context = useContext(MyContext);

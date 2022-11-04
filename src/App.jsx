@@ -13,6 +13,7 @@ const App = () => {
             onClick={context.handleBasketClick}
             basketCount={context.state.basketCount}
          />
+
          <DogCards handleAddBasket={context.handleAddBasket} />
 
          <Basket
