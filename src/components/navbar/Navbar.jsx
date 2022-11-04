@@ -1,10 +1,9 @@
 import React, { useRef, useContext } from "react";
 import "./Navbar.css";
-import { Cart } from "react-bootstrap-icons";
+import { Cart, CurrencyBitcoin } from "react-bootstrap-icons";
 import { MyContext } from "../../context";
 
 const Navbar = ({ onClick, basketCount }) => {
-   const context = useContext(MyContext);
    const searchText = useRef();
 
    return (

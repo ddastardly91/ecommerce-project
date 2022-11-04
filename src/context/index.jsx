@@ -6,6 +6,7 @@ const MyContext = React.createContext();
 class MyProvider extends Component {
    state = {
       dogData: dogData,
+      filteredData: [],
       basketItems: [],
       showBasket: false,
       basketCount: 0,
