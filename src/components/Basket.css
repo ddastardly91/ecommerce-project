@@ -6,6 +6,7 @@
    height: 100%;
    border-left: 2px solid #000;
 
+   overflow-y: scroll;
    background-color: #fff;
    transition: 300ms ease-in;
 }
@@ -39,7 +40,6 @@
    font-size: 35px;
    margin: 20px;
    padding-bottom: 10px;
-
    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 
@@ -82,7 +82,9 @@
 .btn-checkout {
    float: right;
    padding: 12px 30px;
-   margin: 50px 20px 50px 0;
+   margin: 0 20px;
+   margin-top: 50px;
+   margin-bottom: 100px;
    background-color: #61f2c2;
    font-family: "Poppins";
    font-weight: bold;
@@ -93,6 +95,10 @@
 .btn-checkout:hover {
    background-color: #b5ffe6;
    cursor: pointer;
+}
+
+.btn-basket-container {
+   margin-bottom: 200px;
 }
 
 .empty-cart-text {

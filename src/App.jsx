@@ -5,9 +5,6 @@ import { useContext } from "react";
 import { MyContext } from "./context";
 
 const App = () => {
-   // const [basketItems, setBasketItems] = useState([]);
-   // const [basketCount, setBasketCount] = useState(0);
-
    const context = useContext(MyContext);
 
    return (

@@ -1,12 +1,14 @@
 import React, { Component } from "react";
+import dogData from "../data";
 
 const MyContext = React.createContext();
 
 class MyProvider extends Component {
    state = {
+      dogData: dogData,
       basketItems: [],
-      basketCount: 0,
       showBasket: false,
+      basketCount: 0,
       basketTotal: 0,
    };
 
@@ -31,10 +33,13 @@ class MyProvider extends Component {
       }));
    };
 
-   removeBasketItem = (id) => {
+   removeBasketItem = (basketItem) => {
       this.setState((prevState) => ({
-         basketItems: prevState.basketItems.filter((item) => id !== item.id),
+         basketItems: prevState.basketItems.filter(
+            (item) => basketItem.id !== item.id
+         ),
          basketCount: prevState.basketCount - 1,
+         basketTotal: prevState.basketTotal - basketItem.price,
       }));
    };
 

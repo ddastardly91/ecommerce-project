@@ -1,11 +1,14 @@
+import React, { useContext } from "react";
 import Card from "../ui/Card";
 import { GenderMale, GenderFemale } from "react-bootstrap-icons";
-import dogData from "../data.js";
+import { MyContext } from "../context";
 
 const DogCards = ({ handleAddBasket }) => {
+   const context = useContext(MyContext);
+
    return (
       <div className="container">
-         {dogData.map((dog) => {
+         {context.state.dogData.map((dog) => {
             return (
                <Card key={dog.id}>
                   <img src={dog.url} alt={dog.name} />

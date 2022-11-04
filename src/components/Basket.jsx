@@ -36,7 +36,7 @@ const Basket = () => {
                         <div>
                            <XCircleFill
                               className="remove-item"
-                              onClick={() => context.removeBasketItem(item.id)}
+                              onClick={() => context.removeBasketItem(item)}
                            />
                         </div>
                      </div>
@@ -46,15 +46,20 @@ const Basket = () => {
                <h3 className="empty-cart-text">No items in cart</h3>
             )}
             <h2 className="total-price">Total: ${context.state.basketTotal}</h2>
-            <button
-               className="btn-checkout"
-               onClick={() => console.log(context.basketItems)}
-            >
-               CHECKOUT
-            </button>
-            <button className="btn-checkout" onClick={context.handleEmptyCart}>
-               EMPTY CART
-            </button>
+            <div className="btn-basket-container">
+               <button
+                  className="btn-checkout"
+                  onClick={() => console.log(context.basketItems)}
+               >
+                  CHECKOUT
+               </button>
+               <button
+                  className="btn-checkout"
+                  onClick={context.handleEmptyCart}
+               >
+                  EMPTY CART
+               </button>
+            </div>
          </div>
       </div>
    );
